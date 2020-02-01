@@ -1,16 +1,14 @@
+% add FDAM package 
+wherefile=fileparts(which('fdaM.zip'));
+cd(wherefile)
+unzip('fdaM.zip','fdaM')
+
 %Add all subfolder to the path
 folder=fileparts(which('D2LD_ODE.m'));
 addpath(genpath(folder));
 
 % remember the original working directory
 pwdir = pwd;
-
-% add FDAM package to the path
-wherefile=fileparts(which('fdaM.zip'));
-funname = [wherefile,'/fdaM.zip'];
-unzip(funname)
-funname = [wherefile,'/fdaM'];
-addpath(funname)
 
 %Compile the C code for innerloop
 wherefile=fileparts(which('inner_loop.c'));
