@@ -10,7 +10,7 @@ DOI: [10.1016/j.csda.2020.107124](https://doi.org/10.1016/j.csda.2020.107124)
 
 This repository provides MATLAB code implementing the Data2LD (Data to Linear Dynamics) framework introduced in the aforementioned paper. The methodology offers a fast and stable approach for estimating parameters in linear ordinary differential equations (ODEs) from noisy and incomplete data, leveraging the linearity of the system to simplify computations and improve estimation accuracy.
 
-## 🧠 Overview
+##  Overview
 
 The Data2LD framework builds upon the parameter cascading approach, where a linear combination of basis functions approximates the solution of the dynamical system. The system's parameters are then estimated to ensure that this approximating solution adheres to the observed data. Key features include:
 
